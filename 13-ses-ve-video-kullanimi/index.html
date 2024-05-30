@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ses ve Video Kullanımı</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        audio{
+            width: 480px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <center>Bu derste sayfaya video ve ses eklemek için gerekli etiketleri ve kullanımını öğreneceğim.</center>
+    </p>
+    <hr>
+    <p>Pembe Panter Melodisi:</p>
+    <audio controls autoplay muted controlsList="nodownload">
+        <source src="src/audio/sample.wav" type="audio/wav">
+    </audio><br><br>
+    <p>Örnek Dünya Videosu:</p>
+    <video width="480px" controls controlsList="nodownload">
+        <source src="src/video/sample.webm" type="video/webm">
+    </video><br><br>
+    <hr>
+    <p>
+        <center>
+            <em>Notlarım: Sayfaya ses ve video dosyası ekleme temel olarak aynı şekilde yapılıyor. audio etiketinin
+                attributeleri sayesinde bazı kontrolleri yapabiliyoruz. Örneğin sesi/videoyu sayfa yüklendiğinde otomatik oynatma,</em>
+        </center>
+</body>
+
+</html>
