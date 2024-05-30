@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Oluşturma</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        div {
+            width: 100%;
+        }
+
+        form {
+            border: 1px solid black;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            min-width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <center>Bu derste form oluşturma ve bununla bağlantılı elementlerin kullanımını öğreneceğim.</center>
+    </p>
+    <hr>
+    <div>
+        <form action="/basarili.html" method="POST">
+            <h2>Kullanıcı Kayıt Formu</h2>
+            <label for="kullaniciadi">Kullanıcı Adı</label>
+            <br>
+            <input type="text" name="kullaniciadi" id="kullaniciadi" placeholder="Kullanıcı adı giriniz:" required
+                autofocus>
+            <br>
+            <br>
+            <label for="sifre">Şifre</label>
+            <br>
+            <input type="password" name="sifre" id="sifre" placeholder="Şifrenizi giriniz:" required>
+            <br>
+            <br>
+            <label for="email">Email adresi</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Email adresinizi giriniz:" required>
+            <p>Cinsiyetinizi seçiniz:</p>
+            <input type="radio" name="cinsiyet" value="Erkek" required>Erkek <input type="radio" name="cinsiyet"
+                value="Kadin" required>Kadın <br>
+            <br>
+            <input type="submit" name="gonder" id="gonder" value="Kayıt Ol">
+            <br>
+            <br>
+        </form>
+    </div>
+    <hr>
+    <p>
+        <center>
+            <i>Notlarım: Formlar çeşitli elementler sayesinde kullanıcıdan istediğimiz verileri almamızı sağlar.
+                Aldığımız verileri çeşitli methodlar yardımıyla backend tarafına gönderebiliriz. (Örn: Bir veri tabanına
+                kullanıcı bilgilerinin gönderilmesi ve kaydedilmesi.) Label etiketi input elementinin başlığı gibi
+                düşünülebilir. Input elementinin kullandığım attributelerini özetlersek; id daha sonradan css ile stil
+                verirken kullanılacak, placeholder inputta hiç bir değer yokken gözükecek (aslında yazı değil sadece
+                görüntü olarak), value: form gönderildikten sonra backend tarafında o inputun aldığı isim, autofocus:
+                sayfa yüklendiğinde mouse imlecinin otomatik olarak o inputa odaklanmasını sağlamak için. required:
+                alanın boş bırakılmasını engellemek için.</i>
+        </center>
+</body>
+
+</html>
